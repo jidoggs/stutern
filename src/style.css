@@ -211,11 +211,11 @@ header nav > div > button:last-child:hover {
   }
   #mobile-nav:checked + .mobile-nav-btn .mobile-nav-icon::before {
     top: 0;
-    transform: rotate(135deg);
+    transform: rotate(45deg);
   }
   #mobile-nav:checked + .mobile-nav-btn .mobile-nav-icon::after {
     top: 0;
-    transform: rotate(-135deg);
+    transform: rotate(-45deg);
   }
   #mobile-nav:checked ~ .main-nav {
     display: block;
