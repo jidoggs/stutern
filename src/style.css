@@ -9,14 +9,44 @@
 html {
   font-size: 16px;
 }
-@media screen and (min-width: 26.5625rem) {
+@media screen and (max-width: 24rem) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 24.0001rem) {
   html {
     font-size: 9px;
   }
 }
-@media screen and (max-width: 24rem) {
+@media screen and (min-width: 26.5625rem) {
+  html {
+    font-size: 9.5px;
+  }
+}
+@media screen and (min-width: 27.0625rem) {
+  html {
+    font-size: 7px;
+  }
+}
+@media screen and (min-width: 30rem) {
+  html {
+    font-size: 7.5px;
+  }
+}
+@media screen and (min-width: 35.625rem) {
   html {
     font-size: 8px;
+  }
+}
+@media screen and (min-width: 36.25rem) {
+  html {
+    font-size: 8.5px;
+  }
+}
+@media screen and (min-width: 40rem) {
+  html {
+    font-size: 9px;
   }
 }
 @media screen and (min-width: 64rem) {
