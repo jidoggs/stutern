@@ -10,12 +10,7 @@ html {
   font-size: 16px;
 }
 
-@media screen and (max-width: 26.5625rem) {
-  html {
-    font-size: 8px;
-  }
-}
-@media screen and (min-width: 26.625rem) {
+@media screen and (max-width: 32.1875rem) {
   html {
     font-size: 10px;
   }
@@ -179,7 +174,7 @@ header nav > div > button:last-child:hover {
   header nav {
     display: none;
     position: absolute;
-    top: 3.5rem;
+    top: 5rem;
     left: 0;
     background-color: #fff;
     width: 100%;
@@ -231,6 +226,16 @@ header nav > div > button:last-child:hover {
   }
   #mobile-nav:checked ~ .main-nav {
     display: block;
+  }
+}
+@media screen and (max-width: 32.1875rem) {
+  header nav {
+    top: 5rem;
+  }
+}
+@media screen and (min-width: 32.25rem) {
+  header nav {
+    top: 4.2rem;
   }
 }
 
