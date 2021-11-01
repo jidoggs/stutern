@@ -9,57 +9,23 @@
 html {
   font-size: 16px;
 }
-@media screen and (max-width: 24rem) {
+
+@media screen and (max-width: 32.1875rem) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
-@media screen and (min-width: 24.0001rem) {
+@media screen and (min-width: 32.25rem) {
   html {
-    font-size: 9px;
+    font-size: 13px;
   }
 }
-@media screen and (min-width: 26.5625rem) {
-  html {
-    font-size: 9.5px;
-  }
-}
-@media screen and (min-width: 27.0625rem) {
-  html {
-    font-size: 7px;
-  }
-}
-@media screen and (min-width: 30rem) {
-  html {
-    font-size: 7.5px;
-  }
-}
-@media screen and (min-width: 35.625rem) {
-  html {
-    font-size: 8px;
-  }
-}
-@media screen and (min-width: 36.25rem) {
-  html {
-    font-size: 8.5px;
-  }
-}
-@media screen and (min-width: 40rem) {
-  html {
-    font-size: 9px;
-  }
-}
-@media screen and (min-width: 64rem) {
-  html {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 48.0625rem) {
   html {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 85rem) {
+@media screen and (min-width: 75rem) {
   html {
     font-size: 16px;
   }
@@ -92,6 +58,14 @@ h2 + p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.container {
+  padding: 3rem;
+}
+@media screen and (max-width: 26.5625rem) {
+  .container {
+    padding: 2rem;
+  }
+}
 
 header {
   background-color: #e6f8f9;
@@ -99,8 +73,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
 }
 
 header a {
@@ -198,7 +174,7 @@ header nav > div > button:last-child:hover {
   header nav {
     display: none;
     position: absolute;
-    top: 4rem;
+    top: 3.5rem;
     left: 0;
     background-color: #fff;
     width: 100%;
@@ -206,6 +182,7 @@ header nav > div > button:last-child:hover {
   }
   header nav > ul {
     display: block;
+    padding-right: 0;
   }
   header nav > ul > li > ul {
     display: block;
@@ -252,34 +229,12 @@ header nav > div > button:last-child:hover {
   }
 }
 
-.container {
-  width: 75rem;
-  margin: 0 auto;
-}
-@media screen and (max-width: 23.4375rem) {
-  .container {
-    width: 43rem;
-  }
-}
-@media screen and (min-width: 24rem) {
-  .container {
-    width: 43rem;
-  }
-}
-
-@media screen and (min-width: 27rem) {
-  .container {
-    width: 60rem;
-  }
-}
-@media screen and (min-width: 48rem) {
-  .container {
-    width: 72rem;
-  }
-}
-
 .stutern__hero {
   background-color: #e6f8f9;
+  padding: 3rem 0;
+}
+.stutern__hero .container {
+  padding: 0 6rem;
 }
 
 .stutern__hero-wrapper {
@@ -319,6 +274,9 @@ header nav > div > button:last-child:hover {
   background: #1ac8bb;
 }
 @media screen and (max-width: 48rem) {
+  .stutern__hero .container {
+    padding: 0 2rem;
+  }
   .stutern__hero-wrapper {
     display: block;
     padding: 3rem 0;
@@ -333,6 +291,16 @@ header nav > div > button:last-child:hover {
   }
   .stutern__hero--text h1 {
     letter-spacing: -0.125rem;
+  }
+}
+@media screen and (min-width: 48.0625rem) {
+  .stutern__hero--text p {
+    width: 33rem;
+  }
+}
+@media screen and (min-width: 51.1875rem) {
+  .stutern__hero--text p {
+    width: 30rem;
   }
 }
 
@@ -384,18 +352,40 @@ header nav > div > button:last-child:hover {
     width: 100%;
   }
 }
-@media screen and (min-width: 49rem) {
-  .stutern__join--text {
-    padding: 0;
+@media screen and (min-width: 48.0625rem) {
+  .stutern__join {
+    padding: 8rem 0;
   }
+
+  .stutern__join .container {
+    padding: 1rem;
+  }
+
   .stutern__join .container img {
-    width: 56%;
+    width: 60%;
+  }
+
+  .stutern__join--text {
+    padding: 2rem;
+  }
+}
+@media screen and (min-width: 59.5625rem) {
+  .stutern__join {
+    padding: 10rem 0;
+  }
+
+  .stutern__join .container {
+    padding: 3rem;
+  }
+
+  .stutern__join .container img {
+    width: 40%;
   }
 }
 
 .stutern__testimony {
   text-align: center;
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 .stutern__testimony h2 + p {
   padding-top: 2rem;
@@ -414,7 +404,6 @@ header nav > div > button:last-child:hover {
   text-transform: capitalize;
   align-items: center;
   padding: 3.25rem;
-  width: 12.25rem;
 }
 
 .stutern__testimony__individual > img {
@@ -445,26 +434,41 @@ header nav > div > button:last-child:hover {
     font-size: 2rem;
     line-height: 1.125;
   }
+  .stutern__testimony__individual > img {
+    width: 50%;
+  }
   .stutern__testimony__wrapper {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
+    padding: 1rem;
+  }
+  .stutern__testimony__individual {
+    place-self: center;
+    padding: 1rem;
   }
 }
-@media screen and (min-width: 63rem) {
-  .stutern__testimony__individual {
-    padding: 1.25rem;
+@media screen and (min-width: 48.0625rem) {
+  .stutern__testimony {
+    padding: 3rem 0;
   }
-  .stutern__testimony__wrapper {
-    justify-content: space-between;
+  .stutern__testimony .container {
+    padding: 0.5rem;
+  }
+  .stutern__testimony__individual > img {
+    width: 50%;
+  }
+
+  .stutern__testimony__individual {
+    place-self: center;
+    padding: 0.5rem;
   }
 }
 
 .stutern__eniola {
   background-color: #1b1642;
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 .stutern__eniola .container {
-  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -506,7 +510,7 @@ header nav > div > button:last-child:hover {
 }
 @media screen and (max-width: 48rem) {
   .stutern__eniola .container {
-    width: 100%;
+    padding: 3rem;
   }
   .stutern__eniola .container > p {
     font-size: 1.5rem;
@@ -519,8 +523,8 @@ header nav > div > button:last-child:hover {
 }
 
 .stutern__partners__text {
-  width: 70%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .stutern__partners--container {
   padding: 2rem;
@@ -530,14 +534,17 @@ header nav > div > button:last-child:hover {
   grid-row-gap: 2rem;
 }
 @media screen and (min-width: 75rem) {
-  .stutern__partners--container {
-    padding: 3rem 0;
+  .stutern__partners__text {
+    padding: 0 15rem;
   }
-  .stutern__partners--container img {
-    width: 100%;
+  .stutern__partners--container {
+    padding: 5rem;
+  }
+  .stutern__partners {
+    padding-bottom: 5rem;
   }
 }
-@media screen and (min-width: 49rem) {
+@media screen and (min-width: 48.0625em) {
   .stutern__partners--container img {
     width: 100%;
   }
@@ -550,8 +557,7 @@ header nav > div > button:last-child:hover {
     width: 100%;
   }
   .stutern__partners__text {
-    width: 90%;
-    margin: 0 auto;
+    padding: 0;
   }
   .stutern__partners {
     padding: 6rem 0;
@@ -561,13 +567,10 @@ header nav > div > button:last-child:hover {
   background-color: #fff;
   padding: 3rem 0;
 }
-.stutern__ready .container {
+.stutern__ready--wrapper {
   background-color: #1bd3c6;
   text-align: center;
   border-radius: 1rem;
-}
-
-.stutern__ready--wrapper {
   padding: 11rem 0;
 }
 .stutern__ready--btn {
@@ -593,6 +596,9 @@ header nav > div > button:last-child:hover {
 @media screen and (max-width: 48rem) {
   .stutern__ready--wrapper {
     padding: 6rem 0 5rem 0;
+  }
+  .stutern__ready .container {
+    padding: 2rem;
   }
 }
 footer {
