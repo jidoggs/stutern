@@ -230,7 +230,7 @@ header nav > div > button:last-child:hover {
 }
 @media screen and (max-width: 32.1875rem) {
   header nav {
-    top: 5rem;
+    top: 4rem;
   }
 }
 @media screen and (min-width: 32.25rem) {
