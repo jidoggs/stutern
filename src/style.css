@@ -10,11 +10,11 @@ html {
   font-size: 16px;
 }
 
-@media screen and (max-width: 32.1875rem) {
+/* @media screen and (max-width: 32.1875rem) {
   html {
     font-size: 10px;
   }
-}
+} */
 @media screen and (min-width: 32.25rem) {
   html {
     font-size: 13px;
@@ -44,7 +44,7 @@ h6 {
   color: #1b1642;
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 3.375rem;
 }
 a,
@@ -454,7 +454,7 @@ header nav > div > button:last-child:hover {
   }
   .stutern__testimony__individual {
     place-self: center;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 }
 @media screen and (min-width: 48.0625rem) {
@@ -535,6 +535,9 @@ header nav > div > button:last-child:hover {
 .stutern__partners__text {
   display: flex;
   flex-direction: column;
+}
+.stutern__partners__text h2 {
+  font-size: 2.4rem;
 }
 .stutern__partners--container {
   padding: 2rem;
